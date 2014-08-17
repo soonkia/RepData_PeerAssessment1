@@ -75,7 +75,9 @@ Now I can draw a Line plot showing the average steps taken on each interval.
 
 
 ```r
-plot(x=avgint$Group.1,y=avgint$x,type="l",xlab="Avg Steps/Interval",ylab="Interval", main="Average steps taken for each interval period")
+plot(x=avgint$Group.1,y=avgint$x,type="l",
+     xlab="Interval",ylab="Avg Steps", 
+     main="Average steps taken for each interval period")
 ```
 
 ![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png) 
@@ -187,13 +189,13 @@ par(mfrow=c(1,2))
 plot(nAvgint$Interval[nAvgint$WeekDays=="Week"],
      nAvgint$x[nAvgint$WeekDays=="Week"],
      type="l",
-     xlab="Avg Steps/Interval",ylab="Interval", 
+     xlab="Interval",ylab="Avg Steps", 
      main="Avg steps during Week",ylim=c(0,250)
      )
 plot(nAvgint$Interval[nAvgint$WeekDays=="Weekend"],
      nAvgint$x[nAvgint$WeekDays=="Weekend"],
      type="l",
-     xlab="Avg Steps/Interval",ylab="Interval", 
+     xlab="Interval",ylab="Avg Steps", 
      main="Avg steps during Weekend",ylim=c(0,250)
      )
 ```
